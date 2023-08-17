@@ -1,0 +1,6 @@
+#include<stdio.h>
+int main ()
+{
+printf("corporate office is at Mysore");
+return 0;
+}
