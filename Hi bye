@@ -1,0 +1,10 @@
+#include <stdio.h>
+#define a
+#ifdef a
+   #define msg "HI"
+#else 
+    #define msg "Bye"
+    #endif
+int main(){
+    printf("%s",msg);
+}
