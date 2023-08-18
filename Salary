@@ -1,0 +1,15 @@
+#include <stdio.h>
+int main() {
+	char id[10];
+	int hr;
+	double val, salary;
+	printf("Input the Employees ID: ");
+	scanf("%s", &id);
+	printf("\nInput the working hrs: ");
+	scanf("%d", &hr);
+	printf("\nSalary amount/hr: ");
+	scanf("%lf", &val);
+	salary = val * hr;
+	printf("\nEmployees ID = %s\nSalary =Rs %.2lf\n", id,salary);
+	return 0;
+}
