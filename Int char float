@@ -1,0 +1,11 @@
+#include <stdio.h>
+ int main(){
+    int iInt=5;
+    char iChar= 'a';
+    float iFloat=3.3;
+     printf("\nInteger you entered is : %d", iInt);
+    printf("\nCharacter you entered is : %c", iChar);
+    printf("\nFloating point number you entered is : %f",
+        iFloat);
+     return 0;
+}
