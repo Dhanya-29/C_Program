@@ -3,9 +3,13 @@
     int iInt=5;
     char iChar= 'a';
     float iFloat=3.3;
+    long int ilongint=12344677;
+    unsigned long int iunsigned long int=987654321;
      printf("\nInteger you entered is : %d", iInt);
     printf("\nCharacter you entered is : %c", iChar);
     printf("\nFloating point number you entered is : %f",
         iFloat);
+printf("\nlong Integer you entered is : %ld", ilongint);
+printf("\nunsigned long Integer you entered is : %lu", iunsigned long int);
      return 0;
 }
