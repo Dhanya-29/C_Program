@@ -1,0 +1,10 @@
+#include<stdio.h>
+int main()
+{
+    int a;
+    printf("Enter a number \t\n");
+    scanf("%d",&a);
+    printf("number entered is %d \t\n",a); 
+    printf("hexadecimal of the number is %x \t\n",a);
+    return 0;
+}
