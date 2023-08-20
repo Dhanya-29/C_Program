@@ -1,0 +1,7 @@
+#include<stdio.h>
+int main()
+{
+int a=86753357888;
+printf("%d",a);
+return 0;
+}
