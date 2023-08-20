@@ -1,0 +1,8 @@
+#include<stdio.h>
+int main()
+{
+    char ich;
+    ich ='-5';
+    printf("trying to print -5 character  %c",ich); // output obtained is 5
+    return 0;
+}
