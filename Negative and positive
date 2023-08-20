@@ -1,0 +1,20 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+long absolute(long num) {
+    if (num < 0) {
+        return -num; 
+    } else {
+        return num; 
+    }
+}
+
+int main() {
+    long a = 10;
+    long b = -20;
+
+    printf("Absolute value of %ld is %ld\n", a, absolute(a)); 
+    printf("Absolute value of %ld is %ld\n", b, absolute(b));
+
+    return 0;
+}
