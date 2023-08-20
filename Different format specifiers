@@ -1,0 +1,14 @@
+#include<stdio.h>
+int main()
+{
+    unsigned int a;
+    a= -123456;
+    printf("unsigned integer is %u \n",a); 
+    printf("unsigned integer is %d \n",a);
+    printf("unsigned integer is %i \n",a); 
+    printf("unsigned integer is %lu \n",a);
+    printf("unsigned integer is %f \n",a); 
+    printf("unsigned integer is %lf \n",a); 
+    printf("unsigned integer is %ld \n",a);
+    return 0;
+}
