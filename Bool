@@ -1,0 +1,14 @@
+
+#include <stdio.h>
+#include<stdbool.h>
+int main() {
+    bool var1 = true;
+    bool var2 = false;
+    bool var3 = 0;
+    bool var4 = 38;
+    printf("var1:%d\n",var1);
+    printf("var2:%d\n",var2);
+    printf("var3:%d\n",var3);
+    printf("var4:%d\n",var4);
+    return 0;
+}
