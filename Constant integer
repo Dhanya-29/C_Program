@@ -1,0 +1,7 @@
+
+#include <stdio.h>
+#define MY_CONSTANT 45
+int main() {
+  printf("The value of the constant is: %d\n", MY_CONSTANT);
+  return 0;
+}
