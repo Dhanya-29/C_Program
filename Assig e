@@ -1,0 +1,7 @@
+#include<stdio.h>
+int main(){
+int ascii_value = 97;
+char character = (char)ascii_value;
+printf("%c\n", character);
+return 0;
+}
