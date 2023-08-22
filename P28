@@ -1,0 +1,14 @@
+#include <stdio.h>
+int main() {
+    int a, b, c;
+    printf("Enter the value of a: ");
+    scanf("%d", &a);
+     printf("Enter the number of increments : ");
+    scanf("%d", &b);
+    printf("Enter the number of decrements: ");
+    scanf("%d", &c);
+     a += b;
+     a -= c;
+     printf("Final value of a: %d\n", a);
+     return 0;
+}
