@@ -1,0 +1,9 @@
+#include <stdio.h>
+int main() {
+    char inp, next ;
+    printf("Enter a character: ");
+    scanf(" %c", &inp);
+    next = inp + 1;
+    printf("The next character is: %c\n", next);
+    return 0;
+}
