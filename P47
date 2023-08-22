@@ -1,0 +1,8 @@
+#include<stdio.h>
+int main()
+{
+    float x=20,y=15,m;
+    m=y/x;
+    printf("the slope of line: %f",m);
+    return 0;
+}
