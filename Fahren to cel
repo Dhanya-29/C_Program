@@ -1,0 +1,9 @@
+#include <stdio.h>
+int main() {
+    float cel, fahren;
+    printf("Enter temp in fahren: ");
+    scanf("%f", &fahren);
+    cel= (fahren-32)*5/9;
+    printf("Temp in Fahren: %.2f\n", fahren);
+    return 0;
+}
