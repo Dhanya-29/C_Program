@@ -4,6 +4,6 @@ int main() {
     printf("Enter temp in fahren: ");
     scanf("%f", &fahren);
     cel= (fahren-32)*5/9;
-    printf("Temp in Fahren: %.2f\n", fahren);
+    printf("Temp in Fahren: %.2f\n",cel);
     return 0;
 }
