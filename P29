@@ -1,0 +1,10 @@
+#include<stdio.h>
+int main(){
+    float a;
+    int result;
+    printf("Enter a float number:");
+    scanf("%f\n",&a);
+    result=(int)(a<0?(a-0.5):(a+0.5));
+    printf("nearest value is %d\n",result);
+    return 0;
+    }
