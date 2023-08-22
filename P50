@@ -1,0 +1,9 @@
+#include<stdio.h>
+int main()
+{
+    int a=15,b=30;
+    int p=2*(a+b);
+    int area=a*b;
+    printf("perimeter of rectangle is %d\n Area of rectangle is %d\n",p,area);
+    return 0;
+}
