@@ -1,0 +1,11 @@
+#include <stdio.h>
+int main() {
+    int a, inc1, dec1;
+    printf("Enter an integer: ");
+    scanf("%d", &a);
+    inc1 = a+1;
+    dec1 = a-1;
+   printf("Incremented value: %d\n", inc1);
+    printf("Decremented value: %d\n", dec1);
+    return 0;
+}
