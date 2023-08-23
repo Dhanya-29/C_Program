@@ -1,0 +1,16 @@
+#include <stdio.h>
+int main() {
+    char alp1, alp2;
+   printf("Enter the first alphabet: ");
+    scanf(" %c", &alp1);
+  printf("Enter the second alphabet: ");
+    scanf(" %c", &alp2);
+    alp1 = tolower(alp1);
+    alp2 = tolower(alp2);
+    if (alp1 == alp2) {
+        printf("The alphabets are equal.\n");
+    } else {
+        printf("The alphabets are not equal.\n");
+    }
+    return 0;
+}
