@@ -1,0 +1,25 @@
+#include<stdio.h>
+int main(){
+    int temp;
+    printf("enter the temperature:");
+    scanf("%d",&temp);
+    if(temp<0){
+        printf("its freezing",temp);
+    }
+    else if(temp>0&&temp<=10){
+        printf("its very cold",temp);
+    }
+    else if(temp>10 && temp<=20){
+        printf("its cold",temp);
+    }
+    else if(temp>20 && temp<=30){
+        printf("its normal temperature",temp);
+    }
+    else if(temp>30 && temp<=40){
+        printf("its hot",temp);
+    }
+    else if(temp>=40){
+        printf("its very hot");
+    }
+    
+}
