@@ -1,0 +1,24 @@
+#include <math.h>
+#include <stdio.h>
+int main() {
+    double a, b, c, dis, r1, r2, real, img;
+    printf("Enter coefficients a, b and c: ");
+    scanf("%lf %lf %lf", &a, &b, &c);
+    dis = b * b - 4 * a * c;
+    if (dis> 0) {
+        r1 = (-b + sqrt(dis)) / (2 * a);
+        r2 = (-b - sqrt(dis)) / (2 * a);
+        printf("r1 = %.2lf and r2 = %.2lf", r1, r2);
+    }
+    else if (dis == 0) {
+        r1 = r2 = -b / (2 * a);
+        printf("r1 = r2 = %.2lf;", r1);
+    }
+    else {
+        real = -b / (2 * a);
+        img = sqrt(-dis) / (2 * a);
+        printf("r1 = %.2lf+%.2lfi and r2 = %.2f-%.2fi", real, img, real, img);
+    }
+
+    return 0;
+}
