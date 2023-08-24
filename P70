@@ -1,35 +1,28 @@
-#include <stdio.h>
-int main() {
-    char m1[]="redmi";
-    char m2[]="oppo";
-    char m3[]="vivo";
-    char m4[]="Samsung";
-    char m5[]="apple";
-    int p1=10000;
-    int p2=25000;
-    int p3=40000;
-    int p4=70000;
-    int p5=100000;
-    int bud_min, bud_max;
-    printf("Enter a minimum budget range:");
-    scanf("%d",& bud_min);
-    printf("Enter a maximum budget range:");
-    scanf("%d",& bud_max);
-    if(p1>=bud_min&& p1<=bud_max)
+#include<stdio.h>
+int main()
+{
+    int vivo=20000,oneplus=45000,oppo=12000,iphone=100000,mi=66000,a,b;
+    printf("enter the value of a and b\n");
+    scanf("%d%d",&a,&b);
+    if((oppo>=a)&&(oppo<=b))
     {
-        printf("%s",m1);
+        printf("the available brand in budget range is oppo");
     }
-    else if(p2>=bud_min&&p2<=bud_max){
-        printf("%s",m2);
+    if((vivo>=a)&&(vivo<=b))
+    {
+        printf("the available brand in budget range is vivo");
     }
-    else if(p3>=bud_min&& p3<=bud_max){
-        printf("%s",m3);
+    if((oneplus>=a)&&(oneplus<=b))
+    {
+        printf("the brand name is oneplus");
     }
-    else if(p4>=bud_min&&p4<=bud_max){
-        printf("%s",m4);
+    if((mi>=a)&&(mi<=b))
+    {
+        printf("the brand name is mi");
     }
-    else if(p5>=bud_min && p5<=bud_max){
-        printf("%s",m5);
+    if((iphone>=a)&&(iphone<=b))
+    {
+        printf("the brand name is iphone");
     }
     return 0;
 }
