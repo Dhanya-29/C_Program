@@ -1,0 +1,9 @@
+#include <stdio.h>
+int main() {
+    int n,sum;
+    printf("Number of sides in the polygon: ");
+    scanf("%d", &n);
+    sum = (n - 2) * 180;
+    printf("sum of internal angles in the polygon is: %d degrees\n", sum);
+    return 0;
+}
