@@ -1,28 +1,28 @@
 #include<stdio.h>
 int main()
 {
-    int vivo=20000,oneplus=45000,oppo=12000,iphone=100000,mi=66000,a,b;
-    printf("enter the value of a and b\n");
-    scanf("%d%d",&a,&b);
-    if((oppo>=a)&&(oppo<=b))
+    int vivo=20000,oneplus=45000,oppo=12000,iphone=100000,mi=66000,min,max;
+    printf("enter the value of min  and max\n");
+    scanf("%d%d",&min,&max);
+    if((oppo>=min)&&(oppo<=max))
     {
-        printf("the available brand in budget range is oppo");
+        printf("the available brand in budget range is oppo\n");
     }
-    if((vivo>=a)&&(vivo<=b))
+    if((vivo>=min)&&(vivo<=max))
     {
-        printf("the available brand in budget range is vivo");
+        printf("the available brand in budget range is vivo\n");
     }
-    if((oneplus>=a)&&(oneplus<=b))
+    if((oneplus>=min)&&(oneplus<=max))
     {
-        printf("the brand name is oneplus");
+        printf("the brand name is oneplus\n");
     }
-    if((mi>=a)&&(mi<=b))
+    if((mi>=min)&&(mi<=max))
     {
-        printf("the brand name is mi");
+        printf("the brand name is mi\n");
     }
-    if((iphone>=a)&&(iphone<=b))
+    if((iphone>=min)&&(iphone<=max))
     {
-        printf("the brand name is iphone");
+        printf("the brand name is iphone\n");
     }
     return 0;
 }
