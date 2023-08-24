@@ -1,34 +1,63 @@
+#include <math.h>
 #include <stdio.h>
-int main() {
-    int c_id, units;
-    char c_name[50];
-    float charges, t_Amt;
-    printf("customer ID: ");
-    scanf("%d", &c_id);
-    printf("customer name: ");
-    scanf(" %[^\n]s", c_name);
-    printf("units consumed: ");
-    scanf("%d", &units);
-    if (units <= 199) {
-        charges = 1.20;
-    } else if (units >= 200 && units < 400) {
-        charges = 1.50;
-    } else if (units >= 400 && units < 600) {
-        charges = 1.80;
-    } else {
-        charges = 2.00;
+int main()
+{
+    int a;
+    float c,amount,ch;
+    char b[20];
+    printf("Enter The customer id : ");
+    scanf("%d",&a);
+    printf("\nEnter The customer name : ");
+    scanf("%s",&b);
+    printf("\nEnter The unit consumed by the user : ");
+    scanf("%f",&c);
+    if (c<=199)
+    {
+       amount=(c*1.2);
+       if (amount<100)
+        {
+        amount=100;}
+       printf("\ncustomer ID is %d\n",a);
+       printf("\ncustomer name is %s\n",b);
+       printf("\nunit consumed by the user is %f\n",c);
+       printf("\nbill amount is %f\n",amount);
+       }
+    else if(c>=200 && c<400)
+    {
+        amount=(238.8+((c-199)*1.5));
+        if(amount>=400)
+        {
+        amount=amount*1.15;
+        }
+       printf("\ncustomer ID is %d\n",a);
+       printf("\ncustomer name is %s\n",b);
+       printf("\nunit consumed by the user is %f\n",c);
+       printf("\nbill amount is %f \n",amount);
     }
-    t_Amt = units * charges;
-    if (t_Amt > 400) {
-        t_Amt += t_Amt * 0.15;
+    else if(c>=400 && c<600)
+    {
+        amount=(537.3+((c-399)*1.8));
+        if(amount>=400)
+        {
+          amount=amount*1.15;
+          }
+       printf("\ncustomer ID is %d\n",a);
+       printf("\ncustomer name is %s\n",b);
+       printf("\nunit consumed by the user is %f\n",c);
+       printf("\nbill amount is %f \n",amount);
     }
-    if (t_Amt < 100) {
-        t_Amt = 100;
+    else if(c>600)
+    {
+       amount=(895.5+((c-599)*2));
+        if(amount>=400)
+        {
+        amount=amount*1.15;
+        }
+       printf("\ncustomer ID is %d\n",a);
+       printf("\ncustomer name is %s\n",b);
+       printf("\nunit consumed by the user is %f\n",c);
+       printf("\nbill amount is %f \n",amount);
     }
-    printf("\nElectricity Bill\n");
-    printf("Customer ID: %d\n", c_id);
-    printf("Customer Name: %s\n", c_name);
-    printf("Units Consumed: %d\n", units);
-    printf("Total Amount to Pay: Rs. %.2f\n", t_Amt);
-     return 0;
+
+    return 0;
 }
