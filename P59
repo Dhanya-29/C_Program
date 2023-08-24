@@ -1,0 +1,65 @@
+include <stdio.h>
+int main() {
+    int math, science, english, kannada, history;
+    float avg;
+    int tot, pass,fail;
+    printf("Enter Math marks: ");
+    scanf("%d", &math);
+    tot += math;
+    if (math >= 35) {
+        pass++;
+    } else {
+        fail++;
+    }
+    printf("Enter Science marks: ");
+    scanf("%d", &science);
+    tot += science;
+    if (science >= 35) {
+        pass++;
+    } else {
+        fail++;
+    }
+    printf("Enter English marks: ");
+    scanf("%d", &english);
+    tot += english;
+    if (english >= 35) {
+        pass++;
+    } else {
+        fail++;
+    }
+    printf("Enter Kannada marks: ");
+    scanf("%d", &kannada);
+    tot += kannada;
+    if (kannada >= 35) {
+        pass++;
+    } else {
+        fail++;
+    }
+    printf("Enter History marks: ");
+    scanf("%d", &history);
+    tot += history;
+    if (history >= 35) {
+        pass++;
+    } else {
+        fail++;
+    }
+    tot=math+english+kannada+history+science;
+    avg = tot/ 5.0;
+    printf("Average marks: %.2f\n", avg);
+    printf("Total marks: %d\n", tot);
+
+    if (avg > 90) {
+        printf("Result: Distinction\n");
+    } else if (avg > 60) {
+        printf("Result: First Class\n");
+    } else if (avg >= 35) {
+        printf("Result: Second Class\n");
+    } else {
+        printf("Result: Fail\n");
+    }
+
+    printf("Passed subjects: %d\n", pass);
+    printf("Failed subjects: %d\n", fail);
+
+    return 0;
+}
