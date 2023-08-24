@@ -1,0 +1,40 @@
+#include<stdio.h>
+int M
+    printf("enter a no from 1 to 7:");
+    scanf("%d",&n);
+    switch(n){
+        case 1:
+        printf("it is Sunday\n",n);
+        break;
+        
+        case 2:
+        printf("it is Monday\n",n);
+        break;
+        
+        case 3:
+        printf("it is Tuesday\n",n);
+        break;
+        
+        case 4:
+        printf("it is Wednesday\n",n);
+        break;
+        
+        case 5:
+        printf("it is Thursday\n",n);
+        break;
+        
+        case 6:
+        printf("it is Friday\n",n);
+        break;
+        
+        case 7:
+        printf("it is Saturday\n",n);
+        break;
+        
+        default:
+        printf("invalid input\n");
+    }
+    return 0;
+}
+        
+        
