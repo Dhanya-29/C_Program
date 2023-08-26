@@ -1,5 +1,5 @@
 #include<stdio.h>
-int M
+int n;
     printf("enter a no from 1 to 7:");
     scanf("%d",&n);
     switch(n){
