@@ -1,0 +1,38 @@
+#include<stdio.h>
+int add(float num1, float num2);
+int sub(float num1, float num2);
+int mul(float num1, float num2);
+int div(float num1, float num2);
+int main(){
+    float num1,num2;
+    printf("enter the first no:");
+    scanf("%f",&num1);
+    printf("enter the second no:");
+    scanf("%f",&num2);
+    float result1=add(num1,num2);
+    printf("the addition of two no is %f\n", result1);
+    float result2=sub(num1,num2);
+    printf("the subtraction of two no is %f\n", result2);
+    float result3=mul(num1,num2);
+    printf("the multiplication of two nos is %f\n",result3);
+    float result4=div(num1,num2);
+    printf("the division of two nos is %f\n", result4);
+}
+int add(float a, float b){
+   float result1=a+b;
+    return result1;
+}
+int sub(float a,float b){
+   float result2=a-b;
+    return result2;
+    
+}
+int mul(float a,float b){
+    float result3=a*b;
+    return result3;
+}
+int div(float a,float b){
+   float result4=a/b;
+    return result4;
+}
+    
