@@ -10,6 +10,6 @@ int main(){
     return 0;
 }
 float volof_sphere(float r){
-    float vol=((4/3)*3.14*(r*r*r));
+    float vol=(1.3333*3.14*(r*r*r));
     return vol;
 }
