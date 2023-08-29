@@ -1,0 +1,10 @@
+#include<stdio.h>
+int num()
+{
+    int a=5;
+    return a;
+}
+void main()
+{
+    printf("%d",num());
+}
