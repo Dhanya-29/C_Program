@@ -1,0 +1,17 @@
+#include<stdio.h>
+int mul(int num1, float num2);
+int main(){
+    int num1;
+    float num2;
+    printf("enter the first num:");
+    scanf("%d",&num1);
+    printf("enter the second num:");
+    scanf("%f",&num2);
+    float res=mul(num1,num2);
+    printf("the multiplied no is %f",res);
+}
+int mul(int a,float b){
+    a*=b;
+    return a;
+    
+}
