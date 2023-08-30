@@ -1,0 +1,7 @@
+#include<stdio.h>
+int var=5;
+int main()
+{
+    int var=9;
+    printf("The value of var is %d",var);
+}
